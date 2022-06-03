@@ -1,0 +1,27 @@
+from random import choice
+uchoice = input('Vamos jogar pedra, papel ou tesoura! Insira sua escolha: ')
+lista = ['pedra', 'papel', 'tesoura']
+cchoice = choice(lista)
+#pedra
+if uchoice not in lista:
+    print(f'"{uchoice}" não é uma escolha válida, verifique se escreveu corretamente!')
+if uchoice == 'pedra' and cchoice == 'papel':
+    print(f'Eu escolhi papel, você ganhou!')
+if uchoice == 'pedra' and cchoice == 'pedra':
+    print(f'Eu também escolhi pedra, empatamos!')
+if uchoice == 'pedra' and cchoice == 'tesoura':
+    print(f'Eu escolhi tesoura, você perdeu!')
+#papel
+if uchoice == 'papel' and cchoice == 'papel':
+    print(f'Eu também escolhi papel, empatamos!')
+if uchoice == 'papel' and cchoice == 'pedra':
+    print(f'Eu escolhi pedra, você ganhou!')
+if uchoice == 'papel' and cchoice == 'tesoura':
+    print(f'Eu escolhi tesoura, você perdeu!')
+#tesoura
+if uchoice == 'tesoura' and cchoice == 'papel':
+    print(f'Eu escolhi papel, você ganhou!')
+if uchoice == 'tesoura' and cchoice == 'pedra':
+    print(f'Eu escolhi pedra, você perdeu!')
+if uchoice == 'tesoura' and cchoice == 'tesoura':
+    print(f'Eu também escolhi tesoura, empatamos!')
